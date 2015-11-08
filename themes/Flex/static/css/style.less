@@ -6,7 +6,7 @@
 @med-grey:  #999999;
 @dark-grey: #242121;
 @sans: 'Source Sans Pro', 'Verdana', sans-serif;
-@mono: 'Source Code Pro', 'Consolas', monospace;
+@mono: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
 @treb: 'Trebuchet MS', sans-serif;
 
 html, body {
@@ -169,6 +169,8 @@ main {
 
     code, kbd, samp, pre {
       font-family: @mono;
+      line-height: 1.3;
+      letter-spacing: 0.015em;
     }
 
     blockquote, pre {
@@ -187,7 +189,7 @@ main {
 
     pre {
       padding: 4px;
-      font-size: .9em;
+      font-size: 13px;
       overflow-x: auto;
     }
 

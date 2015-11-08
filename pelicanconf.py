@@ -20,12 +20,11 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('github', 'http://github.com/kiddick'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('github', 'http://github.com/kiddick'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'http://github.com/kiddick'),
+          ('stack-overflow', 'http://stackoverflow.com/users/3990145/xi'),)
 
 DEFAULT_PAGINATION = 10
 
