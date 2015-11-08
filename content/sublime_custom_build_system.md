@@ -1,4 +1,4 @@
-Title: Custom Sublime Text build systems for python on Fedora 22
+Title: Custom Sublime Text build system for python on Fedora 22
 Date: 2015
 Modified: 2015
 Category: Sublime Text
