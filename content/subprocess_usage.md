@@ -1,6 +1,6 @@
 Title: Subprocess usage
-Date: 2015
-Modified: 2015
+Date: 2015-11-09
+Modified: 2015-11-09
 Category: Python
 Tags: python, subprocess
 

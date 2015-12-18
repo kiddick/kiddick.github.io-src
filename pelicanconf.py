@@ -31,6 +31,6 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = 'themes/Flex'
+THEME = 'themes/simple'
 
 MAIN_MENU = True
