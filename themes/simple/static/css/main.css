@@ -1,0 +1,17 @@
+body {
+    font-family : "Source Sans Pro",Verdana,sans-serif;
+    background-color : #9db1cc;
+    width : 840px;
+    margin: auto;
+}
+
+#content {
+    background: white;
+    padding: 20px 20px;
+    width: 800px;
+    border : 1px solid blue;
+}
+
+img {
+    width: 90%;
+}
