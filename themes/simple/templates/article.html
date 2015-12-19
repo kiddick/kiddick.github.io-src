@@ -22,7 +22,9 @@
   </header>
   <footer class="post-info">
     <time class="published" datetime="{{ article.date.isoformat() }}">
-      {{ article.locale_date }}
+      <div>
+        {{ article.locale_date }}
+      </div>
     </time>
 	{% if article.modified %}
     <time class="modified" datetime="{{ article.modified.isoformat() }}">
@@ -30,11 +32,6 @@
     </time>
 	{% endif %}
     {% if article.authors %}
-    <address class="vcard author">
-      By {% for author in article.authors %}
-          <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-        {% endfor %}
-    </address>
     {% endif %}
   </footer><!-- /.post-info -->
   <div class="entry-content">
