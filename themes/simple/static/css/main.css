@@ -13,7 +13,7 @@ body {
 }
 
 img {
-    width: 90%;
+    max-width: 90%;
 }
 
 a {
@@ -27,6 +27,7 @@ a:link, a:visited {
 
 a:hover, a:active {
     color: red;
+    outline: none;
 }
 
 p a {
@@ -39,8 +40,8 @@ p a:hover, p a:active {
 
 .published div {
     width: 220px;
-    margin-left:auto;
-    margin-right:0;
+    margin-left: auto;
+    margin-right: 0;
     text-align: center;
     font-style: italic;
     font-family: cursive;
@@ -96,8 +97,8 @@ hr {
     background-color: #afafaf;
     border: medium none;
     height: 1px;
+    margin-top: 20px;
     margin-bottom: 40px;
-    margin-top: 40px;
 }
 
 .social a {
@@ -114,4 +115,30 @@ hr {
 .social a:hover, .social a:active {
     -webkit-transform: translateY(-7px);
     transform: translateY(-7px);
+}
+
+.btn_wrapper {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    padding: 0;
+}
+
+.btn {
+    padding: 0.4em 0.6em;
+    margin-right: 10px;
+    font-size: 0.9em;
+    border-radius: 0.25em;
+    background-color: #9da3a4;
+    font-style: italic;
+    font-family: cursive;
+    color: white;
+}
+
+.btn:link, .btn:visited {
+    color: white;
+}
+
+.btn:hover, .btn:active {
+    background-color: #011627
 }

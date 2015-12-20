@@ -6,18 +6,23 @@
 
 <ul id="post-list">
 {% for article in articles_page.object_list %}
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="{{ article.date.isoformat() }}">
-                        <div>
-                            {{ article.locale_date }}
-                        </div>
-                    </time>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
-                <hr>
-        </article></li>
+        <li>
+            <article class="hentry">
+                    <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                    <footer class="post-info">
+                        <time class="published" datetime="{{ article.date.isoformat() }}">
+                            <div>
+                                {{ article.locale_date }}
+                            </div>
+                        </time>
+                    </footer><!-- /.post-info -->
+                    <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+            </article>
+            <div class="btn_wrapper">
+                <a class="btn" href="{{ SITEURL }}/{{ article.url }}">Continue reading</a>
+            </div>
+        </li>
+        <hr>
 {% endfor %}
 </ul><!-- /#posts-list -->
 {% if articles_page.has_other_pages() %}
