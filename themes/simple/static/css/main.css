@@ -131,7 +131,7 @@ hr {
     border-radius: 0.25em;
     background-color: #9da3a4;
     font-style: italic;
-    font-family: cursive;
+    /*font-family: cursive;*/
     color: white;
 }
 
