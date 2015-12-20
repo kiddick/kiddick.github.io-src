@@ -1,15 +1,15 @@
 body {
     font-family : "Source Sans Pro",Verdana,sans-serif;
-    background-color : #9db1cc;
+    background-color : #d4dcff;
     width : 840px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #content {
-    background: white;
+    background-color: #fbf9ff;
     padding: 20px 20px;
     width: 800px;
-    border : 1px solid blue;
 }
 
 img {
@@ -33,7 +33,7 @@ p a {
     background-color: #DCDCDC;
 }
 
-p a:hover, a:active {
+p a:hover, p a:active {
     color: blue;
 }
 
@@ -44,4 +44,74 @@ p a:hover, a:active {
     text-align: center;
     font-style: italic;
     font-family: cursive;
+}
+
+#about {
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#banner {
+    padding: 0;
+    margin: 0;
+    background-color: #011627;
+    border-bottom: 5px solid #1b998b;
+}
+
+#banner ul {
+    padding: 0;
+    margin: 0;
+}
+
+#banner ul li div {
+    text-align: right;
+    width: 690px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#banner ul li div ul li{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+#banner ul li {
+    display: inline-block;
+}
+
+#homepage {
+    padding-left: 10px;
+    color: white;
+}
+
+#post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+hr {
+    background-color: #afafaf;
+    border: medium none;
+    height: 1px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.social a {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    font-size: 1.7em;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 3px;
+}
+
+.social a:hover, .social a:active {
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
 }
