@@ -7,6 +7,11 @@
     padding: 2px 20px;
     line-height: 1.5;
 }
+
+.highlight pre {
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+}
+
 .highlight .c { color: #808080 } /* Comment */
 .highlight .err { color: #000000 } /* Error */
 .highlight .g { color: #000000 } /* Generic */

@@ -12,6 +12,8 @@ TIMEZONE = 'Europe/Moscow'
 
 DEFAULT_LANG = u'en'
 
+LOCALE = ('usa',)
+
 STATIC_PATHS = ['images']
 
 # Blogroll
