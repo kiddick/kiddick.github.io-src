@@ -2,8 +2,8 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
     {% block head %}
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-    <meta charset="utf-8" />
+    <title>{{ SITENAME }}{% block title %}{% endblock title %}</title>
+    {% block meta %} <meta charset="utf-8" /> {% endblock meta %}
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygments.css">
@@ -36,16 +36,16 @@
             </li>
             <li>
                 <div class="social">
-                <ul>
-                {% for name, link in SOCIAL %}
-                    <!-- <li><a href="{{ link }}" target="_blank"><i>{{ name }}</i></a></li> -->
-                    <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
-                {% endfor %}
+                    <ul>
+                        {% for name, link in SOCIAL %}
+                        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+                        {% endfor %}
+                    </ul>
                 </div>
-                </ul>
             </li>
         </ul>
-    </header><!-- /#banner -->
+    </header>
+    <!-- /#banner -->
     {% block content %}
     {% endblock %}
     <footer id="contentinfo" class="body">
